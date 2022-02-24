@@ -64,7 +64,7 @@ class LangCreator
      */
     protected function getLangPath(string $controller)
     {
-        if($this->app->version() < '8.0.0'){
+        if($this->app->version() < '9.0.0'){
             $path = resource_path('lang/'.App::getLocale());
         }else{
             $path = lang_path(App::getLocale());
